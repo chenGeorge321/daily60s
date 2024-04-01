@@ -2,7 +2,9 @@ name: auto
 
 on:
   schedule:
-    - cron: '30 22 * * *' 
+    - cron: '30 22 * * *'
+    - cron: '0 8,12,18 * * *' # 在每天的早上8点、中午12点、晚上6点触发任务
+    - cron: '55 18,19 * * *'   # 在每天的晚上6点55分、7点触发任务
   workflow_dispatch: 
 
 env:
